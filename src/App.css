@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eee;
+  margin: 0;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.store-container {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.icon-switch {
+  cursor: pointer;
+  font-size: 36px;
+  color: #aaa;
+  position: absolute;
+  top: -45px;
+  right: 0;
+}
+
+.icon-switch:hover {
+  color: #555;
+}
+
+.cards-view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.shop-card {
+  width: calc(33.333% - 20px);
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.shop-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+}
+
+.shop-card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #000;
+}
+
+.shop-card span {
+  color: #888;
+}
+
+.shop-card-footer {
+  margin-top: 15px;
+}
+
+.shop-card .btn {
+  border: 2px solid #e91e63;
+  background-color: transparent;
+  color: #e91e63;
+  border-radius: 20px;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.shop-card .btn:hover {
+  background-color: #e91e63;
+  color: white;
+}
+
+.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+  width: 100%; /* список на всю ширину */
+}
+
+.shop-item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  width: 100%; /* элемент списка на всю ширину */
+  box-sizing: border-box;
+}
+
+.shop-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+.shop-item h3 {
+  flex: 1;
+  font-size: 18px;
+  color: #000;
+}
+
+.shop-item span {
+  width: 100px;
+  color: #888;
+}
+
+.shop-item .price {
+  width: 80px;
+  font-weight: bold;
+  color: #000;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.shop-item .btn {
+  border: 2px solid #e91e63;
+  color: #e91e63;
+  background-color: transparent;
+  padding: 5px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.shop-item .btn:hover {
+  background-color: #e91e63;
+  color: white;
+}
